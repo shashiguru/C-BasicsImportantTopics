@@ -44,3 +44,12 @@ namespace BasicsOfCSharp
 
     }
 }
+
+
+
+//Points to Remember :
+//var can only be declared and initialized in a single statement.Following is not valid: 
+//var i; i = 10;
+//var cannot be used as a field type at the class level.
+//var cannot be used in an expression like var i += 10;
+//Multiple vars cannot be declared and initialized in a single statement.For example, var i=10, j=20; is invalid
