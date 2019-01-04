@@ -34,6 +34,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,16 +46,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnonymousType.cs" />
+    <Compile Include="ArrayListEx.cs" />
+    <Compile Include="DataIndexer.cs" />
+    <Compile Include="EnumExample.cs" />
+    <Compile Include="HashEx.cs" />
     <Compile Include="IInterfaceTopics.cs" />
     <Compile Include="ImplementingInterface.cs" />
     <Compile Include="Implicitlytyped.cs" />
+    <Compile Include="JaggedArray.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="PartialClass.cs" />
+    <Compile Include="PartialClass1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortedListEx.cs" />
+    <Compile Include="StaticClass.cs" />
+    <Compile Include="StaticConstructorClass.cs" />
     <Compile Include="StructExample.cs" />
+    <Compile Include="TupleEx.cs" />
     <Compile Include="ValueTyped.cs" />
+    <Compile Include="ValueTypeTuple.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

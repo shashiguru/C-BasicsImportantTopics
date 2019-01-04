@@ -32,6 +32,54 @@ namespace BasicsOfCSharp
             Console.WriteLine(s2.EmpId);
             Console.WriteLine(s2.FirstName);
             Console.WriteLine(s2.LastName);
+            Console.WriteLine((int)EnumExample.Monday);
+            Console.WriteLine(Enum.GetName(typeof(EnumExample), 4));
+            foreach (string str in Enum.GetNames(typeof(EnumExample)))
+                Console.WriteLine(str);
+            //StringBuilder is a dynamic object that allows you to expand the number of characters in the string.
+            //It doesn't create a new object in the memory but dynamically expands memory to accommodate the modified string.
+            StringBuilder sb = new StringBuilder("Hello Shashiguru!!");
+            Console.WriteLine(sb);
+            sb.Insert(16," Keluth");
+            Console.WriteLine(sb);
+            sb.Append("??");
+            Console.WriteLine(sb);
+            PartialClass p = new PartialClass();
+            p.Method1();
+            p.Method2();
+            StaticClass.StaticMethod();
+            Console.WriteLine(StaticClass.StaticVariable);
+            StaticConstructorClass s = new StaticConstructorClass();
+            StaticConstructorClass s5 = new StaticConstructorClass();
+            StaticConstructorClass s6 = new StaticConstructorClass();
+            WithStatic.somemethod();
+            JaggedArray ja = new JaggedArray();
+            ja.jaggedArrayValues();
+            ja.jaggedMultiValues();
+            DataIndexer strStore = new DataIndexer();
+
+            strStore[0] = "One";
+            strStore[1] = "Two";
+            strStore[2] = "Three";
+            strStore[3] = "Four";
+
+            Console.WriteLine(strStore["one"]);
+            Console.WriteLine(strStore["two"]);
+            Console.WriteLine(strStore["Three"]);
+            Console.WriteLine(strStore["FOUR"]);
+            TupleEx t = new TupleEx();
+            t.TupleAccessing();
+            t.TupleAsParameter(Tuple.Create(1,"shashi","guru"));
+            var t1=t.TupleAsReturn();
+            Console.WriteLine(t1.Item1);
+            Console.WriteLine(t1.Item2);
+            Console.WriteLine(t1.Item3);
+            ArrayListEx arrayList = new ArrayListEx();
+            arrayList.ArrayListMethod();
+            SortedListEx sortList = new SortedListEx();
+            sortList.SortedMetohd();
+            HashEx hash = new HashEx();
+            hash.HashMethod();
             Console.ReadLine();
 
         }
@@ -45,5 +93,9 @@ namespace BasicsOfCSharp
                 Console.WriteLine(s.Length);
             }
         }
+       
     }
 }
+
+
+
